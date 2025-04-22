@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Miguel Solis\\CORPSOFT - Miguel Solis\\Git\\CORSARIO\\Reporte CSV BANCO\\DmRptBanco\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9E79EA2E-35C1-47DD-88D5-19E0DAD47B09}|DmRptBanco\\DmRptBanco.csproj|e:\\miguel solis\\corpsoft - miguel solis\\git\\corsario\\reporte csv banco\\dmrptbanco\\dmrptbanco\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E79EA2E-35C1-47DD-88D5-19E0DAD47B09}|DmRptBanco\\DmRptBanco.csproj|solutionrelative:dmrptbanco\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E79EA2E-35C1-47DD-88D5-19E0DAD47B09}|DmRptBanco\\DmRptBanco.csproj|e:\\miguel solis\\corpsoft - miguel solis\\git\\corsario\\reporte csv banco\\dmrptbanco\\dmrptbanco\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9E79EA2E-35C1-47DD-88D5-19E0DAD47B09}|DmRptBanco\\DmRptBanco.csproj|solutionrelative:dmrptbanco\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "E:\\Miguel Solis\\CORPSOFT - Miguel Solis\\Git\\CORSARIO\\Reporte CSV BANCO\\DmRptBanco\\DmRptBanco\\MainForm.cs",
+              "RelativeDocumentMoniker": "DmRptBanco\\MainForm.cs",
+              "ToolTip": "E:\\Miguel Solis\\CORPSOFT - Miguel Solis\\Git\\CORSARIO\\Reporte CSV BANCO\\DmRptBanco\\DmRptBanco\\MainForm.cs",
+              "RelativeToolTip": "DmRptBanco\\MainForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:13:18.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\Miguel Solis\\CORPSOFT - Miguel Solis\\Git\\CORSARIO\\Reporte CSV BANCO\\DmRptBanco\\DmRptBanco\\MainForm.cs",
+              "RelativeDocumentMoniker": "DmRptBanco\\MainForm.cs",
+              "ToolTip": "E:\\Miguel Solis\\CORPSOFT - Miguel Solis\\Git\\CORSARIO\\Reporte CSV BANCO\\DmRptBanco\\DmRptBanco\\MainForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "DmRptBanco\\MainForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T15:12:00.257Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1423,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
