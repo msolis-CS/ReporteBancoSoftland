@@ -51,4 +51,3 @@ E:\Miguel Solis\CORPSOFT - Miguel Solis\Git\CORSARIO\Reporte CSV BANCO\DmRptBanc
 E:\Miguel Solis\CORPSOFT - Miguel Solis\Git\CORSARIO\Reporte CSV BANCO\DmRptBanco\DmRptBanco\obj\Release\DmRptBanco.csproj.Up2Date
 E:\Miguel Solis\CORPSOFT - Miguel Solis\Git\CORSARIO\Reporte CSV BANCO\DmRptBanco\DmRptBanco\obj\Release\DmRptBanco.exe
 E:\Miguel Solis\CORPSOFT - Miguel Solis\Git\CORSARIO\Reporte CSV BANCO\DmRptBanco\DmRptBanco\obj\Release\DmRptBanco.pdb
-E:\Miguel Solis\CORPSOFT - Miguel Solis\Git\CORSARIO\Reporte CSV BANCO\DmRptBanco\DmRptBanco\obj\Release\DmRptBanco.exe.licenses

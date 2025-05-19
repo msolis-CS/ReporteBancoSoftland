@@ -76,7 +76,7 @@ namespace DmRptBanco
 
             try
             {
-                string sql = $@"SELECT NUMERO_NOMINA as Numero FROM FS.NOMINA_HISTORICO WHERE NOMINA = '{nomina}' ORDER BY NUMERO_NOMINA DESC";
+                string sql = $@"SELECT NUMERO_NOMINA as Numero FROM {compania}.NOMINA_HISTORICO WHERE NOMINA = '{nomina}' ORDER BY NUMERO_NOMINA DESC";
 
                 dt = StaticData.oCnn.ExecuteDatatable(sql);
 
@@ -112,29 +112,29 @@ namespace DmRptBanco
             switch (monthNumber)
             {
                 case 1:
-                    return "Enero";
+                    return "ENE";
                 case 2:
-                    return "Febrero";
+                    return "FEB";
                 case 3:
-                    return "Marzo";
+                    return "MAR";
                 case 4:
-                    return "Abril";
+                    return "ABR";
                 case 5:
-                    return "Mayo";
+                    return "MAY";
                 case 6:
-                    return "Junio";
+                    return "JUN";
                 case 7:
-                    return "Julio";
+                    return "JUL";
                 case 8:
-                    return "Agosto";
+                    return "AGO";
                 case 9:
-                    return "Septiembre";
+                    return "SEP";
                 case 10:
-                    return "Octubre";
+                    return "OCT";
                 case 11:
-                    return "Noviembre";
+                    return "NOV";
                 case 12:
-                    return "Diciembre";
+                    return "DIC";
                 default:
                     throw new Exception("Error al definir el mes de la nómina.");
             }
@@ -178,7 +178,7 @@ namespace DmRptBanco
                 var entidadFinanciera = entidad;
 
                 var queryNomiNetos = $@"
-                    SELECT E.CUENTA_ENTIDAD, NN.NETO
+                    SELECT E.CUENTA_ENTIDAD, CONVERT(DECIMAL(18,2),NN.NETO) NETO, E.E_MAIL
                     FROM {compania}.EMPLEADO_NOMI_NETO NN
                     INNER JOIN {compania}.EMPLEADO E ON E.EMPLEADO = NN.EMPLEADO
                     WHERE NN.NUMERO_NOMINA = {numero_nomina}
@@ -198,8 +198,8 @@ namespace DmRptBanco
                 var archivoCSV = new StringBuilder();
                 string mesNomina = getMonthNameFromNumber(fechaPago.Month);
                 string nombreNomina = fechaPago.Day <= 15
-                    ? $"Planilla I QQ {mesNomina} {fechaPago.Year}"
-                    : $"Planilla II QQ {mesNomina} {fechaPago.Year}";
+                    ? $"COMPLEMENTO NOMINA 1Q {mesNomina}-{fechaPago.Year}"
+                    : $"COMPLEMENTO NOMINA 2Q {mesNomina}-{fechaPago.Year}";
 
                 archivoCSV.AppendLine($"B,{totalRegistros},{fechaPago.Year},{fechaPago.Month},{fechaPago.Day},{totalMonto},N,S");
 
@@ -207,7 +207,9 @@ namespace DmRptBanco
                 {
                     var cuentaEntidad = nomiNetosDt.Rows[i]["CUENTA_ENTIDAD"].ToString();
                     var neto = Convert.ToDecimal(nomiNetosDt.Rows[i]["NETO"]);
-                    archivoCSV.AppendLine($"T,{i + 1},{cuentaEntidad},{neto},{nombreNomina},,30,1,,,{nombreNomina}");
+                    var correo = nomiNetosDt.Rows[i]["E_MAIL"].ToString();
+                    //archivoCSV.AppendLine($"T,{i + 1},{cuentaEntidad},{neto},{nombreNomina},,30,1,,,{nombreNomina}");
+                    archivoCSV.AppendLine($"T,{i + 1},{cuentaEntidad},{neto},{nombreNomina},{correo},30,1");
                 }
 
                 // Insertar en histórico
